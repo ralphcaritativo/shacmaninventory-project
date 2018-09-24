@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+{% extends 'dashboard/base.html' %}
+
+
+    {% block content %}
     This is Dashboard Page
     <br>
     <a href="{% url 'inventory_dashboard' %}">Invetory Module</a>
-  </body>
-</html>
+    {% endblock %}
+    

@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+{% extends 'dashboard/base.html' %}
+
+
+    {% block content %}
     This is inventory dashboard
     <br><br>
-    <a href="{% url 'item_master' %}" role="button">Item Master</a>
+    <a href="{% url 'system_dashboard' %}" role="button">Home</a>
+    <br><br>
+    <br><br>
+    <a href="{% url 'item_master_list' %}" role="button">Item Master</a>
     <br><br>
     <a href="{% url 'receiving_transaction_list' %}">Receiving Transaction</a>
     <br><br>
@@ -21,6 +21,7 @@
     <br><br>
     <a href="{% url 'scrap_transaction_list' %}">Scrap Transaction</a>
     <br><br>
+    <a href="{% url 'inventory_maintenance' %}">Inventory Maintenance</a>
+    <br><br>
 
-  </body>
-</html>
+{% endblock %}

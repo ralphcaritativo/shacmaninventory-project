@@ -38,14 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard',
+    # Inventory Module
     'inventory',
-    'item_master',
-    'receiving_transaction',
-    'qa_transaction',
-    'return_to_supplier',
-    'material_requisition_entry',
-    'issuing_transaction',
-    'scrap_transaction',
 ]
 
 MIDDLEWARE = [
